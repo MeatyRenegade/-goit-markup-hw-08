@@ -1,0 +1,132 @@
+.main-header {
+  background-color: $fill-in-color;
+  border-bottom: 1px solid $bottom-border-color;
+}
+
+.header-topline-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.logo-box-top {
+  display: flex;
+  align-items: center;
+}
+
+.logo-box-top > .main-nav > li > a {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.link-type {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $header-color;
+
+  &:hover::after,
+  &:focus::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $hover-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 99;
+  }
+}
+
+.link-header {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $main-text-color;
+  margin-left: 50px;
+
+  &:hover .mailto-svg,
+  &:focus .mailto-svg {
+    fill: $hover-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover .tel-svg,
+  &:focus .tel-svg {
+    fill: $hover-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.link-header:last-child {
+  margin-right: 0px;
+}
+
+.info-box-top {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.main-nav {
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-nav-item {
+  padding-right: 50px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+}
+
+.active {
+  color: $hover-color;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $hover-color;
+    z-index: 99;
+  }
+}
+
+.mailto-svg {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: $main-text-color;
+}
+
+.tel-svg {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  fill: $main-text-color;
+}

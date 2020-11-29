@@ -1,0 +1,80 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $fill-in-color;
+}
+
+.clients-list {
+  display: flex;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.clients-item {
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid $clients-list-color;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 30px;
+  fill: $clients-list-color;
+
+  &:hover,
+  &:focus {
+    border-color: $hover-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover .clients-svg,
+  &:focus .clients-svg {
+    fill: $hover-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.clients-svg-1 {
+  height: 50px;
+  width: 45px;
+  fill: $clients-list-color;
+}
+
+.clients-svg-2 {
+  height: 52px;
+  width: 40px;
+  fill: $clients-list-color;
+}
+
+.clients-svg-3 {
+  height: 43px;
+  width: 41px;
+  fill: $clients-list-color;
+}
+
+.clients-svg-4 {
+  height: 43px;
+  width: 80px;
+  fill: $clients-list-color;
+}
+
+.clients-svg-5 {
+  height: 47px;
+  width: 59px;
+  fill: $clients-list-color;
+}
+
+.clients-svg-6 {
+  height: 46px;
+  width: 89px;
+  fill: $clients-list-color;
+}

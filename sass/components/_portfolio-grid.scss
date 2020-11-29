@@ -1,0 +1,131 @@
+.project-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.button-project-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  border-style: none;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  color: $header-color;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  margin-right: 8px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-radius: 4px;
+    color: $fill-in-color;
+    background-color: $hover-color;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.project-list {
+  margin: 0;
+}
+
+.project-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-top: 50px;
+}
+
+.project-item {
+  width: 370px;
+  height: 404px;
+  border: 1px solid $wwd-backgr;
+
+  &:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.project-link {
+  text-decoration: none;
+
+  &:hover .project-thumb-over,
+  &:focus .project-thumb-over {
+    transform: translatey(0);
+  }
+}
+
+.project-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-thumb-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translatey(+100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+  color: $fill-in-color;
+}
+
+.project-list-desc {
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  font-size: 16px;
+  width: 100%;
+}
+
+.ourworks-header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: $header-color;
+}
+
+.ourworks-desc {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: $main-text-color;
+}
