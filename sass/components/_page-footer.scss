@@ -5,7 +5,7 @@
 }
 
 .contact-list {
-  display: flex;
+  /* display: flex; */
 }
 
 .contact-list-header {
@@ -42,15 +42,15 @@
 }
 
 .social-icons {
-  display: flex;
+  /* display: flex; */
   padding: 0;
   margin-left: 70px;
 }
 
 .social-icons-link {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -82,7 +82,7 @@
 }
 
 .telegram-sub-form {
-  display: flex;
+  /* display: flex; */
   padding: 0;
   margin-left: 93px;
 }
@@ -102,17 +102,17 @@
   background-color: transparent;
 
   & textarea::placeholder {
+    /* display: flex;
+    align-items: center; */
     font-size: 16px;
     line-height: 1.25;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
 }
 
 .telegram-sub-button {
-  display: flex;
+  /* display: flex; */
   border-style: none;
   font-weight: 700;
   font-size: 16px;

@@ -5,7 +5,7 @@
 }
 
 .clients-list {
-  display: flex;
+  /* display: flex; */
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -19,9 +19,9 @@
 }
 
 .clients-link {
-  display: flex;
+  /*  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   width: 170px;
   height: 90px;
   border: 1px solid $clients-list-color;
