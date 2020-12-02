@@ -1,5 +1,4 @@
 .features-section {
-  /* padding-top: 94px; */
   background-color: $fill-in-color;
 
   @media screen and (min-width: 480px) {
@@ -16,37 +15,53 @@
   margin: 0;
   list-style: none;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 480px) {
     display: flex;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
     justify-content: space-between;
   }
 }
 
 .features-item {
-  /* display: flex; */
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:not(:nth-child(even)) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .features-box {
-  /*  display: flex; */
+  display: flex;
   height: 120px;
   background-color: $wwd-backgr;
   margin-bottom: 30px;
   border-radius: 4px;
   padding-top: 25px;
-  padding-right: 100px;
   padding-bottom: 25px;
-  padding-left: 100px;
 
   @media screen and (min-width: 480px) {
     width: 450px;
+    padding-right: 192px;
+    padding-left: 192px;
   }
 
   @media screen and (min-width: 768px) {
     width: 354px;
+    padding-right: 144px;
+    padding-left: 144px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 270px;
+    padding-right: 100px;
+    padding-left: 100px;
   }
 }
 
