@@ -1,7 +1,15 @@
 .our-team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background-color: $wwd-backgr;
+
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .our-team-header {
@@ -50,12 +58,12 @@
 }
 
 .social-team-box {
-  /*  display: flex;
-  justify-content: space-evenly; */
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .social-team-icons {
-  /* display: flex; */
+  display: flex;
   padding: 0;
 }
 
@@ -70,9 +78,9 @@
 }
 
 .social-team-link {
-  /* display: flex;
+  display: flex;
   align-items: center;
-  justify-content: center; */
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;

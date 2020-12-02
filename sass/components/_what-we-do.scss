@@ -2,6 +2,10 @@
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: $fill-in-color;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .wwd-header {
