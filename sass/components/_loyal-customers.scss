@@ -40,8 +40,18 @@
 }
 
 .clients-item {
-  &:last-child {
-    margin-right: 0;
+  margin-right: 30px;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
@@ -54,7 +64,7 @@
   border: 1px solid $clients-list-color;
   box-sizing: border-box;
   border-radius: 4px;
-  margin-right: 30px;
+  /*  margin-right: 30px; */
   fill: $clients-list-color;
 
   &:hover,
