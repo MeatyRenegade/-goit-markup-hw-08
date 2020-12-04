@@ -45,16 +45,11 @@ body {
 }
 
 .container {
+  width: 480px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -97,12 +92,12 @@ body {
   color: #ffffff;
 }
 
-.main-header {
+.header {
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
 
-.header-topline-box {
+.header-box {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,12 +109,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 80px;
-}
-
-@media screen and (min-width: 480px) {
-  .header-topline-box {
-    display: block;
-  }
 }
 
 .logo-box-top {
@@ -197,6 +186,13 @@ body {
   display: flex;
   margin-top: 32px;
   margin-bottom: 32px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .info-box-top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -306,12 +302,14 @@ body {
 
 @media screen and (min-width: 480px) {
   .hero-section-header {
+    width: 360px;
     font-size: 26px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero-section-header {
+    width: 696px;
     font-size: 44px;
   }
 }
@@ -367,7 +365,7 @@ body {
   position: relative;
   top: 50%;
   left: 50%;
-  width: 528px;
+  width: 450px;
   padding: 40px;
   border-radius: 4px;
   background-color: #ffffff;
@@ -380,11 +378,23 @@ body {
   z-index: 99;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
+}
+
 .modal-close-button {
   position: absolute;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   top: 8px;
   right: 8px;
   padding: 0;
@@ -415,8 +425,13 @@ body {
 
 .modal-input-form {
   position: relative;
-  /* display: flex;
-  flex-direction: column; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .modal-input-form input:hover,
@@ -453,10 +468,17 @@ body {
 
 .modal-input-agreement {
   position: relative;
-  /*  display: flex;
-  justify-content: center;
-  align-items: center; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 30px;
+  font-size: 12px;
 }
 
 .modal-input-agreement input[type="checkbox"] + label::before {
@@ -471,8 +493,8 @@ body {
   position: absolute;
   display: inline-block;
   content: "";
-  top: 3px;
-  left: 8px;
+  top: 2px;
+  left: 0;
   width: 16px;
   height: 15px;
   background: url("../images/checkbox.svg");
@@ -480,6 +502,14 @@ body {
 
 .modal-input-agreement input {
   visibility: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-input-agreement {
+    top: 3px;
+    left: 8px;
+    font-size: 14px;
+  }
 }
 
 .modal-input-label {
@@ -494,7 +524,7 @@ body {
 .modal-input-field {
   margin-bottom: 10px;
   padding-left: 40px;
-  width: 448px;
+  /* width: 448px; */
   height: 40px;
   font-style: #212121;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -502,6 +532,10 @@ body {
           box-sizing: border-box;
   border-radius: 4px;
   color: #757575;
+  /* @media screen and (max-width: 767px) {
+    max-width: 100%;
+    min-width: 100%;
+  } */
 }
 
 .modal-input-textarea {
@@ -572,9 +606,15 @@ body {
 
 .modal-input-check-icon {
   position: absolute;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   top: 3px;
   left: 5px;
 }
@@ -686,20 +726,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
   border-radius: 4px;
   padding-top: 25px;
   padding-bottom: 25px;
-}
-
-@media screen and (min-width: 480px) {
-  .features-box {
-    width: 450px;
-    padding-right: 192px;
-    padding-left: 192px;
-  }
+  padding-right: 192px;
+  padding-left: 192px;
 }
 
 @media screen and (min-width: 768px) {
@@ -726,6 +761,12 @@ body {
   text-transform: uppercase;
   color: #212121;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .feature-header {
+    text-align: center;
+  }
 }
 
 .item-p {

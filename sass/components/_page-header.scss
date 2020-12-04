@@ -1,18 +1,14 @@
-.main-header {
+.header {
   background-color: $fill-in-color;
   border-bottom: 1px solid $bottom-border-color;
 }
 
-.header-topline-box {
+.header-box {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
-
-  @media screen and (min-width: 480px) {
-    display: block;
-  }
 }
 
 .logo-box-top {
@@ -80,6 +76,10 @@
   display: flex;
   margin-top: 32px;
   margin-bottom: 32px;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+  }
 
   &.is-hidden {
     @media screen and (max-width: 767px) {
