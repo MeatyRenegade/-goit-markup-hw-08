@@ -50,10 +50,10 @@
 }
 
 .our-team-item {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 450px;
-    height: 622px;
+  width: 100%;
+  height: auto;
 
+  @media screen and (max-width: 767px) {
     &:not(:nth-last-child(-n + 1)) {
       margin-bottom: 30px;
     }
@@ -80,16 +80,13 @@
 }
 
 .team-memb-box {
+  width: 100%;
+  height: auto;
   background: $fill-in-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 450px;
-    height: 622px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  /* @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;
     height: 536px;
   }
@@ -97,10 +94,10 @@
   @media screen and (min-width: 1200px) {
     width: 270px;
     height: 428px;
-  }
+  } */
 }
 
-.tm-description {
+.team-memb-description {
   margin-top: 30px;
   margin-bottom: 16px;
 }
@@ -137,9 +134,14 @@
   list-style: none;
   fill: $fill-in-color;
   margin-right: 10px;
+  margin-bottom: 24px;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
   }
 }
 
