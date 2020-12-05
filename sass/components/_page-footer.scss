@@ -4,23 +4,17 @@
   padding-bottom: 60px;
   text-align: center;
   background-color: $hero-backg-cl;
-}
-
-.footer-contact-list {
-  display: flex;
-
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
 
   @media screen and (min-width: 1200px) {
     text-align: left;
+  }
+}
+
+.footer-contact-list {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
   }
 }
 
@@ -30,6 +24,10 @@
     justify-content: space-around;
     align-items: baseline;
   }
+}
+
+.footer-logo-box {
+  margin-bottom: 20px;
 }
 
 .footer-social {
@@ -69,10 +67,6 @@
   margin-top: 60px;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    /* text-align: center; */
-  }
-
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: 5px;
   }
@@ -84,21 +78,19 @@
 
 .social-icons {
   display: flex;
+  justify-content: center;
   padding: 0;
 }
 
 .footer-social-icons-item {
+  display: flex;
+  justify-content: center;
   list-style: none;
   margin-right: 10px;
-  margin-bottom: 24px;
   fill: $fill-in-color;
 
   &:last-child {
     margin-right: 0;
-  }
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 30px;
   }
 }
 
@@ -126,6 +118,7 @@
 
 .footer-sub-form {
   display: block;
+
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
@@ -138,11 +131,17 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $fill-in-color;
-  margin-top: 12px;
+  margin-top: 60px;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+  }
 }
 
 .telegram-sub-form {
+  display: flex;
+  justify-content: center;
   padding: 0;
 
   @media screen and (min-width: 480px) and (max-width: 1199px) {
@@ -190,12 +189,13 @@
 .telegram-sub-button {
   display: flex;
   align-items: center;
+  margin-top: 20px;
+  padding: 10px 0px 10px 29px;
   border-style: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  padding: 10px 0px 10px 29px;
   border-radius: 4px;
   background-color: $hover-color;
   color: $fill-in-color;
@@ -210,5 +210,9 @@
     background-image: url(../images/social-links/telegram-1.svg);
     margin-left: 10px;
     margin-right: 28px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
   }
 }
