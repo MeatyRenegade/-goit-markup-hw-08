@@ -1,10 +1,7 @@
 .our-team-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: $wwd-backgr;
-
-  @media screen and (min-width: 480px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
@@ -19,10 +16,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: $hero-backg-cl;
-
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
@@ -30,17 +24,14 @@
 }
 
 .our-team-list {
+  display: flex;
+  justify-content: center;
   padding-left: 0;
   padding-bottom: 0;
   margin: 0;
   list-style: none;
 
-  @media screen and (min-width: 480px) {
-    display: flex;
-    justify-content: center;
-  }
-
-  @media screen and (min-width: 480px) and (max-width: 1199px) {
+  @media screen and (max-width: 1199px) {
     flex-wrap: wrap;
   }
 
@@ -85,16 +76,6 @@
   background: $fill-in-color;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
-  /* @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 354px;
-    height: 536px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-    height: 428px;
-  } */
 }
 
 .team-memb-description {
