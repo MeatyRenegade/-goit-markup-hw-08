@@ -693,7 +693,7 @@ body {
 @media screen and (min-width: 1200px) {
   .features-section {
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 0;
   }
 }
 
@@ -701,7 +701,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-left: 0;
+  padding: 0;
   margin: 0;
   list-style: none;
 }
@@ -720,6 +720,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .features-list {
+    margin-bottom: 0;
+  }
+}
+
 .features-item {
   width: 100%;
 }
@@ -730,6 +736,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .features-item {
+    width: 270px;
+  }
+}
+
 .features-box {
   display: inline-block;
   width: 100%;
@@ -737,26 +749,24 @@ body {
   background-color: #f5f4fa;
   margin-bottom: 30px;
   border-radius: 4px;
-  /* padding-top: 25px;
-  padding-bottom: 25px; */
-  /* padding-right: 192px;
-  padding-left: 192px; */
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-@media screen and (min-width: 768px) {
-  .features-box {
-    width: calc((100% - 30px) / 2);
-    padding-right: 144px;
-    padding-left: 144px;
-  }
+.f-background-1 {
+  background-image: url(../images/features-svg/antenna-1.svg);
 }
 
-@media screen and (min-width: 1200px) {
-  .features-box {
-    width: 270px;
-    padding-right: 100px;
-    padding-left: 100px;
-  }
+.f-background-2 {
+  background-image: url(../images/features-svg/astronaut-1.svg);
+}
+
+.f-background-3 {
+  background-image: url(../images/features-svg/clock-1.svg);
+}
+
+.f-background-4 {
+  background-image: url(../images/features-svg/diagram-1.svg);
 }
 
 .feature-header {
@@ -773,21 +783,6 @@ body {
   .feature-header {
     text-align: center;
   }
-}
-
-.item-p {
-  /* width: 450px;
-  height: 50px;
-  margin-bottom: 0;
-
-  @media screen and (min-width: 768px) {
-    width: 354px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-    height: 75px;
-  } */
 }
 
 .what-we-do {
