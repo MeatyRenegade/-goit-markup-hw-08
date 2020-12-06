@@ -126,6 +126,24 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (max-width: 767px) {
+  .header-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .header-mobile {
+    display: none;
+  }
+}
+
 .header-box {
   position: relative;
   display: -webkit-box;
@@ -579,11 +597,11 @@ body {
 }
 
 .modal-input-agreement input[type="checkbox"] + label::before {
-  background: url(../images/checkbox.svg);
+  background: url(../images/svg-icons/checkbox.svg);
 }
 
 .modal-input-agreement input[type="checkbox"]:checked + label::before {
-  background: url(../images/checkbox-check.svg);
+  background: url(../images/svg-icons/checkbox-check.svg);
 }
 
 .modal-input-agreement label::before {
@@ -816,19 +834,19 @@ body {
 }
 
 .f-background-1 {
-  background-image: url(../images/features-svg/antenna-1.svg);
+  background-image: url(../images/svg-icons/features-svg/antenna-1.svg);
 }
 
 .f-background-2 {
-  background-image: url(../images/features-svg/astronaut-1.svg);
+  background-image: url(../images/svg-icons/features-svg/astronaut-1.svg);
 }
 
 .f-background-3 {
-  background-image: url(../images/features-svg/clock-1.svg);
+  background-image: url(../images/svg-icons/features-svg/clock-1.svg);
 }
 
 .f-background-4 {
-  background-image: url(../images/features-svg/diagram-1.svg);
+  background-image: url(../images/svg-icons/features-svg/diagram-1.svg);
 }
 
 .feature-header {
@@ -1492,7 +1510,7 @@ body {
   display: inline-block;
   width: 24px;
   height: 24px;
-  background-image: url(../images/social-links/telegram-1.svg);
+  background-image: url(../images/svg-icons/social-links/telegram-1.svg);
   margin-left: 10px;
   margin-right: 28px;
 }

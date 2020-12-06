@@ -118,11 +118,11 @@
   font-size: 12px;
 
   & input[type="checkbox"] + label::before {
-    background: url(../images/checkbox.svg);
+    background: url(../images/svg-icons/checkbox.svg);
   }
 
   & input[type="checkbox"]:checked + label::before {
-    background: url(../images/checkbox-check.svg);
+    background: url(../images/svg-icons/checkbox-check.svg);
   }
 
   & label::before {
