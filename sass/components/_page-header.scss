@@ -46,11 +46,10 @@
 }
 
 .link-header {
-  /* display: flex; */
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: $main-text-color;
   margin-left: 50px;
@@ -66,16 +65,28 @@
     fill: $hover-color;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+
+  &:last-child {
+    margin-right: 0px;
+  }
+
+  &:first-child {
+    margin-bottom: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.14;
+
+    &:first-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
-.link-header:last-child {
-  margin-right: 0px;
-}
-
-.info-box-top {
-  display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
+.contacts-box-top {
+  display: block;
 
   &.is-hidden {
     @media screen and (max-width: 767px) {
@@ -83,8 +94,9 @@
     }
   }
 
-  @media screen and (max-width: 1199px) {
-    flex-wrap: wrap;
+  @media screen and (min-width: 1200px) {
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 }
 
@@ -101,6 +113,8 @@
 }
 
 .main-nav {
+  display: flex;
+
   &.is-hidden {
     @media screen and (max-width: 767px) {
       display: none;
@@ -108,7 +122,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    display: flex;
     align-items: flex-start;
   }
 }
@@ -139,15 +152,25 @@
 }
 
 .mailto-svg {
-  width: 16px;
-  height: 12px;
+  width: 14px;
+  height: 10px;
   margin-right: 10px;
   fill: $main-text-color;
+
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 .tel-svg {
   width: 10px;
-  height: 16px;
+  height: 14px;
   margin-right: 10px;
   fill: $main-text-color;
+
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
 }

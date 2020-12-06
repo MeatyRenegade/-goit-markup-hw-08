@@ -6,6 +6,10 @@
   text-decoration: none;
   color: $header-color;
 
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-right: 94px;
   }
@@ -17,4 +21,17 @@
 
 .web-wpart {
   color: $fill-in-color;
+}
+
+.footer-web-logo {
+  font-family: $logo-font-family;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: $header-color;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 94px;
+  }
 }

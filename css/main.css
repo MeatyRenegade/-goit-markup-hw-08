@@ -45,6 +45,7 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: 480px;
   margin: 0 auto;
   padding: 0 15px;
@@ -81,6 +82,12 @@ body {
   color: #212121;
 }
 
+@media screen and (min-width: 768px) {
+  .web-logo {
+    margin-right: 88px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .web-logo {
     margin-right: 94px;
@@ -93,6 +100,21 @@ body {
 
 .web-wpart {
   color: #ffffff;
+}
+
+.footer-web-logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-web-logo {
+    margin-right: 94px;
+  }
 }
 
 .header {
@@ -153,13 +175,12 @@ body {
 }
 
 .link-header {
-  /* display: flex; */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
   margin-left: 50px;
@@ -183,24 +204,37 @@ body {
   margin-right: 0px;
 }
 
-.info-box-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
+.link-header:first-child {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .link-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .link-header:first-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts-box-top {
+  display: block;
 }
 
 @media screen and (max-width: 767px) {
-  .info-box-top.is-hidden {
+  .contacts-box-top.is-hidden {
     display: none;
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .info-box-top {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+@media screen and (min-width: 1200px) {
+  .contacts-box-top {
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
 }
 
@@ -222,6 +256,12 @@ body {
   }
 }
 
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 @media screen and (max-width: 767px) {
   .main-nav.is-hidden {
     display: none;
@@ -230,9 +270,6 @@ body {
 
 @media screen and (min-width: 1200px) {
   .main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -265,17 +302,31 @@ body {
 }
 
 .mailto-svg {
-  width: 16px;
-  height: 12px;
+  width: 14px;
+  height: 10px;
   margin-right: 10px;
   fill: #757575;
 }
 
+@media screen and (min-width: 1200px) {
+  .mailto-svg {
+    width: 16px;
+    height: 12px;
+  }
+}
+
 .tel-svg {
   width: 10px;
-  height: 16px;
+  height: 14px;
   margin-right: 10px;
   fill: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .tel-svg {
+    width: 10px;
+    height: 16px;
+  }
 }
 
 .hero-section {
