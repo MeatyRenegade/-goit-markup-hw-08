@@ -12,50 +12,54 @@
   <body>
     <!-- Верхняя линия -->
     <header class="header">
-      <nav class="container header-mobile">
-        <a class="logo-head link" href="./index.html" lang="en"><span class="logo-blue">Web</span>Studio</a>
-        <button class="menu-button" type="button" data-menu-button="">
-          <svg class="mobile-btn-pic">
-            <use class="mobile-lines" href="./images/svg-icons/sprite.svg#icon-menu"></use>
-            <use class="mobile-cross" href="./images/svg-icons/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-        <div class="mobile-navigation" data-menu="">
-          <ul class="headnav list">
-            <li class="li-item"><a class="current link current-line" href="./index.html">Студия</a></li>
-            <li class="portfolio li-item"><a class="link" href="./portfolio.html" target="_blank">Портфолио</a></li>
-            <li class="li-item"><a class="link" href="#contacts">Контакты</a></li>
-          </ul>
-          <ul class="contacts list">
-            <li class="li-item mail">
-              <a class="link flex" href="mailto:info@devstudio.com">
-                <svg class="contacts-icon">
-                  <use href="./images/svg-icons/sprite.svg#envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="li-item">
-              <a class="link flex" href="tel:+380961111111">
-                <svg class="contacts-icon">
-                  <use href="./images/svg-icons/sprite.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <!-- Мобильное меню -->
+      <div class="container">
+        <nav class="header-mobile">
+          <a class="web-logo" href="./index.html"><span class="web-part">Web</span><span>Studio</span></a>
+          <button class="menu-button is-open" type="button" aria-expanded="true" aria-controls="menu-container-mobile" data-menu-button>
+            <svg class="mobile-button-pic" width="40" height="40">
+              <use class="link icon-menu" href="./images/svg-icons/sprite.svg#icon-menu"></use>
+              <use class="link icon-close" href="./images/svg-icons/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="mobile-menu is-open" data-menu>
+            <ul class="list mobile-menu-navigation">
+              <li class=""><a class="link mobile-nav-link mobile-nav-active" href="./index.html">Студия</a></li>
+              <li class=""><a class="link mobile-nav-link" href="./portfolio.html">Портфолио</a></li>
+              <li class=""><a class="link mobile-nav-link" href="#contacts">Контакты</a></li>
+            </ul>
+            <ul class="list mobile-link-header">
+              <li class="link">
+                <a class="link mobile-mailto-link" href="mailto:info@devstudio.com">
+                  <svg class="mailto-svg">
+                    <use href="./images/svg-icons/sprite.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="link">
+                <a class="link mobile-tel-link" href="tel:+380961111111">
+                  <svg class="tel-svg">
+                    <use href="./images/svg-icons/sprite.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- Стандартное меню -->
       <div class="container header-box">
         <nav class="logo-box-top">
           <a class="web-logo" href="./index.html"><span class="web-part">Web</span><span>Studio</span></a>
-          <ul class="list main-nav is-hidden">
+          <ul class="list main-nav">
             <li class="main-nav-item"><a class="link link-type list active" href="./index.html">Студия</a></li>
             <li class="main-nav-item"><a class="link link-type list" href="./portfolio.html">Портфолио</a></li>
             <li class="main-nav-item"><a class="link link-type list" href="#contacts">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="list contacts-box-top is-hidden">
+        <ul class="list contacts-box-top">
           <li class="list link link-header">
             <a class="link link-header" href="mailto:info@devstudio.com">
               <svg class="mailto-svg"><use href="./images/svg-icons/sprite.svg#envelope"></use></svg>info@devstudio.com
