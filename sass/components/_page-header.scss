@@ -3,31 +3,8 @@
   border-bottom: 1px solid $bottom-border-color;
 }
 
-.header-mobile {
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  @media screen and (max-width: 767px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-.menu-button {
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
-
-.mobile-menu.is-open {
-  display: block;
-}
-
 .mobile-menu {
+  display: none;
   position: absolute;
   width: 100%;
   top: 100%;
@@ -37,14 +14,10 @@
   background-color: $fill-in-color;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   z-index: 10;
-}
 
-.mobile-menu-navigation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 18px;
-  line-height: 1.17;
+  &.is-open {
+    display: block;
+  }
 }
 
 .header-box {
@@ -65,33 +38,6 @@
 
 .logo-box-top > .main-nav > li > a {
   position: relative;
-}
-
-.mobile-nav-link {
-  display: inline-block;
-  margin-bottom: 40px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.16;
-  letter-spacing: 0.02em;
-  color: $header-color;
-}
-
-.mobile-nav-active {
-  position: relative;
-  color: #2196f3;
-  margin-bottom: 48px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #2196f3;
-  }
 }
 
 .link-type {
@@ -115,35 +61,6 @@
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 99;
   }
-}
-
-.mobile-link-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-}
-
-.mobile-mailto-link {
-  display: inline-block;
-  margin-top: 20px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.16;
-  color: $main-text-color;
-}
-
-.mobile-tel-link {
-  display: inline-block;
-  margin-top: 10px;
-  text-align: left;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.16;
-  color: $main-text-color;
 }
 
 .link-header {
