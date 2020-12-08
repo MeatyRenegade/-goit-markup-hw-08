@@ -1627,6 +1627,12 @@ body {
   height: 294px;
 }
 
+@media screen and (max-width: 479px) {
+  .project-thumb {
+    height: 100%;
+  }
+}
+
 .project-thumb-over {
   position: absolute;
   top: 0;
@@ -1648,20 +1654,41 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  padding: 63px 24px;
+  font-size: 15px;
+  line-height: auto;
+  letter-spacing: 0.02em;
+  padding: 18px 25px;
   color: #ffffff;
 }
 
+@media screen and (min-width: 450px) {
+  .project-description {
+    padding: 77px 24px;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-description {
+    padding: 49px 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .project-description {
+    padding: 63px 24px;
+  }
+}
+
 .project-list-desc {
+  width: 100%;
   padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
   font-size: 16px;
-  width: 100%;
 }
 
 .ourworks-header {
