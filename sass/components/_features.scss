@@ -43,7 +43,9 @@
 }
 
 .features-box {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 120px;
   background-color: $wwd-backgr;
@@ -53,30 +55,14 @@
   background-position: center;
 }
 
-.ft-background-1 {
-  background-image: url(../images/svg-icons/features-svg/antenna-1.svg);
-}
-
-.ft-background-2 {
-  background-image: url(../images/svg-icons/features-svg/astronaut-1.svg);
-}
-
-.ft-background-3 {
-  background-image: url(../images/svg-icons/features-svg/clock-1.svg);
-}
-
-.ft-background-4 {
-  background-image: url(../images/svg-icons/features-svg/diagram-1.svg);
-}
-
 .feature-header {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.42;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $header-color;
-  margin-bottom: 10px;
 
   @media screen and (max-width: 767px) {
     text-align: center;
