@@ -803,19 +803,19 @@ body {
   background-position: center;
 }
 
-.f-background-1 {
+.ft-background-1 {
   background-image: url(../images/svg-icons/features-svg/antenna-1.svg);
 }
 
-.f-background-2 {
+.ft-background-2 {
   background-image: url(../images/svg-icons/features-svg/astronaut-1.svg);
 }
 
-.f-background-3 {
+.ft-background-3 {
   background-image: url(../images/svg-icons/features-svg/clock-1.svg);
 }
 
-.f-background-4 {
+.ft-background-4 {
   background-image: url(../images/svg-icons/features-svg/diagram-1.svg);
 }
 
