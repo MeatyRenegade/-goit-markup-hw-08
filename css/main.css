@@ -368,7 +368,7 @@ body {
 }
 
 .hero-section-header {
-  width: 360px;
+  width: 100%;
   margin-right: auto;
   margin-bottom: 30px;
   margin-left: auto;
@@ -381,9 +381,9 @@ body {
   color: #ffffff;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 480px) {
   .hero-section-header {
-    width: 100%;
+    width: 360px;
   }
 }
 
