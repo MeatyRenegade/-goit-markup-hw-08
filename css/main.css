@@ -567,10 +567,6 @@ body {
   font-size: 12px;
 }
 
-.modal-input-agreement input[type="checkbox"] + label::before {
-  background: url(../images/svg-icons/checkbox.svg);
-}
-
 .modal-input-agreement input[type="checkbox"]:checked + label::before {
   background: url(../images/svg-icons/checkbox-check.svg);
 }
@@ -583,7 +579,7 @@ body {
   left: 0;
   width: 16px;
   height: 15px;
-  background: url("../images/checkbox.svg");
+  background: url("../images/svg-icons/checkbox.svg");
 }
 
 .modal-input-agreement input {
