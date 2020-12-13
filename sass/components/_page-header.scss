@@ -58,14 +58,14 @@
   margin-bottom: 5px;
   margin-top: 5px;
 
-  &:hover .mailto-svg,
-  &:focus .mailto-svg {
+  &:hover svg,
+  &:focus svg {
     fill: $hover-color;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &:hover .tel-svg,
-  &:focus .tel-svg {
+  &:hover svg,
+  &:focus svg {
     fill: $hover-color;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -99,7 +99,6 @@
 
 .main-nav {
   display: flex;
-
   @media screen and (min-width: 1200px) {
     align-items: flex-start;
   }
